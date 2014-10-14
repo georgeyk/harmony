@@ -1,29 +1,72 @@
 ---
 layout: default
 ---
-<div id="home" class="page-content wc-container">
-	<div class="posts">
-  		{% for post in site.posts limit:10 %}
-  			<div class="post">
-    			<h3 class="post-title">
-			      <a href="{{ site.url }}{{ post.url }}">
-			        {{ post.title }}
-			      </a>
-    			</h3>
+<div class="page-content wc-container">
+  <div class="post">
+    <h1>About</h1>
+    <div class="post">
+      <p>
+      I'm software developer who works remotely (currently in Brazil) , mainly using Python and related techonologies.
+      </p>
+      <p>
+      And also very interested in open source, bootstrapping and entrepeneurship.
+      </p>
+      <p>
+      If you need, you can contact me via the links below.
+      </p>
+      <div class="social">
+        <ul class="social-media">
+          {% if site.harmony.social.twitter %}
+          <li>
+          <a title="{{ site.harmony.social.twitter }} on Twitter"
+            href="https://twitter.com/{{ site.harmony.social.twitter }}"
+            class="twitter wc-img-replace" target="_blank">Twitter</a>
+          </li>
+          {% endif %}
 
-    			<span class="post-date">{{ post.date | date_to_string }}</span>    			
-  				<p>
-	  				{{ post.description }}	
-  				</p>
-  				<p>
-  					<a href="{{ post.url | prepend: site.baseurl }}" title="{{ post.title}}">
-  						Read More
-					</a>
-  				</p>
-  			</div>
-  		{% endfor %}
-	</div>
-	<div class="post-footer">
-		<div class="column-full"><a href="{{ site.baseurl }}/blog/">Blog archive</a></div>
-	</div>
+          {% if site.harmony.social.github %}
+          <li>
+          <a title="{{ site.harmony.social.github }} on Github"
+            href="https://github.com/{{ site.harmony.social.github }}"
+            class="github wc-img-replace" target="_blank">Github</a>
+          </li>
+          {% endif %}
+
+          {% if site.harmony.social.facebook %}
+          <li>
+          <a title="{{ site.harmony.social.facebook }} on Facebook"
+            href="https://facebook.com/{{ site.harmony.social.facebook }}"
+            class="facebook wc-img-replace" target="_blank">Facebook</a>
+          </li>
+          {% endif %}
+
+          {% if site.harmony.social.gplus %}
+          <li>
+          <a title="{{ site.harmony.social.gplus }} on Google Plus"
+            href="https://plus.google.com/{{ site.harmony.social.gplus }}"
+            class="google wc-img-replace" target="_blank">Google</a>
+          </li>
+          {% endif %}
+
+          {% if site.harmony.social.dribble %}
+          <li>
+          <a title="{{ site.harmony.social.dribble }} on Dribble"
+            href="https://dribbble.com/{{ site.harmony.social.dribble }}"
+            class="dribble wc-img-replace" target="_blank">Dribble</a>
+          </li>
+          {% endif %}
+
+          {% if site.harmony.social.pinterest %}
+          <li>
+          <a title="{{ site.harmony.social.pinterest }} on Pinterest"
+            href="https://www.pinterest.com/{{ site.harmony.social.pinterest }}"
+            class="pinterest wc-img-replace" target="_blank">Pinterest</a>
+          </li>
+          {% endif %}
+        </ul>
+        <p>Or contato|a|georgeyk.com.br</p>
+      </div>
+    </div>
+  </div>
 </div>
+
