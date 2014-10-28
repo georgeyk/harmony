@@ -4,6 +4,7 @@ title:  Format Json in command line
 date:   2014-10-22 18:12:00
 categories:
 - blog
+- en
 - python
 - json
 ---
@@ -19,3 +20,4 @@ $ echo '{"foo": "bar"}' | jsonfmt
 {% endhighlight %}
 
 The alias creation is optional.
+o/
