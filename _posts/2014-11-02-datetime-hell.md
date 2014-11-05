@@ -36,7 +36,41 @@ we are advised to use [pytz][pytz] when working with localized date and times.
 
 That hurts!
 
+**Notes**
+
+Actually, the use of pytz and datetime might still be broken if you use datetime.now, take a look:
+
+{% highlight python %}
+>>> from datetime import datetime
+>>> from pytz import timezone
+>>> tz = timezone('America/Sao_Paulo')
+>>> datetime.now().strftime('%Y-%m-%d %H:%M:%S %Z%z')
+'2014-11-05 19:10:55 '
+>>> tz.localize(datetime.now()).strftime('%Y-%m-%d %H:%M:%S %Z%z')
+'2014-11-05 19:11:12 BRST-0200'
+{% endhighlight %}
+
+As you notice, there is no date and time convertion, just a setting of timezones. And it is also
+true if we use datetime.utcnow.
+
+One way to workaround this is to use [python-dateutil][dateutil] or [Arrow][arrow]:
+
+{% highlight python %}
+>>> from dateutil.tz import gettz
+>>> from datetime import datetime
+>>> import arrow
+>>> tz = gettz('America/Sao_Paulo')
+>>> datetime.now(tz).strftime('%Y-%m-%d %H:%M:%S %Z%z')
+'2014-11-05 19:19:56 BRST-0200'
+>>> datetime.utcnow().strftime('%Y-%m-%d %H:%M:%S %Z%z')
+'2014-11-05 21:20:58 '
+>>> arrow.now('America/Sao_Paulo').strftime('%Y-%m-%d %H:%M:%S %Z%z')
+'2014-11-05 19:26:03 BRST-0200'
+{% endhighlight %}
+
 o/
 
 [datetime]: https://docs.python.org/2.7/library/datetime.html#tzinfo-objects
 [pytz]: http://pytz.sourceforge.net/#localized-times-and-date-arithmetic
+[dateutil]: https://labix.org/python-dateutil
+[arrow]: http://crsmithdev.com/arrow/
