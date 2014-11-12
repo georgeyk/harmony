@@ -2,13 +2,12 @@
 layout: post
 title:  "Localized date/time hell"
 date:   2014-11-02 17:00:45
-description: Just a sample post to show some of the typography elements supported from harmony theme.
 categories:
 - blog
 - en
 - datetime
 - python
---- 
+---
 
 Once in a while we still need to work with localized dates instead of UTC and almost everytime we
 have bad surprises.
@@ -30,7 +29,7 @@ datetime.datetime(2014, 11, 2, 0, 0, tzinfo=<DstTzInfo 'America/Sao_Paulo' BRST-
 Did you see that (LMT/BRST) ? WTF those dates are not equals ? Which one is correct ?
 
 The answer is that the standard [datetime][datetime] module does not work with every timezones and
-we are advised to use [pytz][pytz] when working with localized date and times. 
+we are advised to use [pytz][pytz] when working with localized date and times.
 
 (So the second way is the correct one)
 
