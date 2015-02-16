@@ -13,17 +13,15 @@ categories:
 I was testing something using python3x when I realize that flake8/pep8 always warn me about an
 "[W802] undefined name".
 
-Very annoying, to fix that, create a *~/.config/pep8*:
+Very annoying and I could not find anything to fix that without remove the warning (entirely).
 
+In the meanwhile, I'm importing from the builtins module just to make them happy.
+For example:
 
-{% highlight ini %}
-[pep8]
-builtins = _
+{% highlight python %}
+
+from builtins import FileNotFoundError
+
 {% endhighlight %}
 
 o/
-
-[datetime]: https://docs.python.org/2.7/library/datetime.html#tzinfo-objects
-[pytz]: http://pytz.sourceforge.net/#localized-times-and-date-arithmetic
-[dateutil]: https://labix.org/python-dateutil
-[arrow]: http://crsmithdev.com/arrow/
