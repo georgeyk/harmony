@@ -9,6 +9,7 @@ title: Vendas
     <li><a href="{{ site.base_url }}/vendas_lavar/">Máquina de lavar brastemp</a></li>
     <li><a href="{{ site.base_url }}/vendas_geladeira/">Geladeira frost-free consul</a></li>
     <li><a href="{{ site.base_url }}/vendas_forno/">Forno elétrico fischer</a></li>
+    <li><a href="{{ site.base_url }}/vendas_ferro/">Ferro de passar electrolux</a></li>
     <li><a href="{{ site.base_url }}/vendas_wiimote/">Wiimote</a></li>
     <li><a href="{{ site.base_url }}/vendas_som/">Caixa de som subwoofer leadership</a></li>
     <li><a href="{{ site.base_url }}/vendas_massagem/">Kit de massagem</a></li>
