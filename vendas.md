@@ -4,6 +4,7 @@ title: Vendas
 ---
 <div class="page-content wc-container">
   <h1>Vendas</h1>  
+  <p>Contato: 9712 8428 ou <a href="https://www.facebook.com/george.kussumoto">facebook</a></p>
   <ul>
     <li><a href="{{ site.base_url }}/vendas_cama/">Cama box probel</a></li>
     <li><a href="{{ site.base_url }}/vendas_lavar/">Máquina de lavar brastemp</a></li>
