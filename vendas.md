@@ -16,5 +16,6 @@ title: Vendas
     <li><a href="{{ site.base_url }}/vendas_wiimote/">Wiimote</a></li>
     <li><a href="{{ site.base_url }}/vendas_som/">Caixa de som subwoofer leadership[em reserva]</a></li>
     <li><a href="{{ site.base_url }}/vendas_massagem/">Kit de massagem</a></li>
+    <li><a href="{{ site.base_url }}/vendas_livros/">Livros</a></li>
   </ul>
 </div>
