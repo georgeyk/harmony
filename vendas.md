@@ -6,11 +6,6 @@ title: Vendas
   <h1>Vendas</h1>  
   <p>Contato: 9712 8428 ou <a href="https://www.facebook.com/george.kussumoto">facebook</a></p>
   <ul>
-    <li><a href="{{ site.base_url }}/vendas_cama/">Cama box probel [em reserva]</a></li>
-    <li><strike>Máquina de lavar brastemp</strike></li>
-    <li><a href="{{ site.base_url }}/vendas_geladeira/">Geladeira frost-free consul[em reserva]</a></li>
-    <li><strike>Forno elétrico fischer</strike></li>
-    <li><a href="{{ site.base_url }}/vendas_ferro/">Ferro de passar electrolux[em reserva]</a></li>
     <li><a href="{{ site.base_url }}/vendas_liqui/">Liquidificador walita</a></li>
     <li><a href="{{ site.base_url }}/vendas_bate/">Batedeira NKS[em reserva]</a></li>
     <li><a href="{{ site.base_url }}/vendas_wiimote/">Wiimote</a></li>
